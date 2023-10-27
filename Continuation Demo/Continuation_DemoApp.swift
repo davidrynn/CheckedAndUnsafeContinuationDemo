@@ -11,7 +11,7 @@ import SwiftUI
 struct Continuation_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnimalView(viewModel: AnimalViewModel(service: NetworkClient()))
         }
     }
 }
